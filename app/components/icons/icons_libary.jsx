@@ -2,8 +2,9 @@
 
 export const InkybayToolTip = ({ text }) => {
   return (
-    <div className="logo_opo" style={{ position: "absolute", bottom: "-32px" }}>
-      <div className="inkybay_tooltip">{text}</div>
+    
+    <div className="inkybay_tooltip" style={{ position: "absolute", bottom: "-32px" }}>
+      {text}
     </div>
   );
 };
@@ -55,23 +56,21 @@ export const Badge = ({ text }) => {
 
 export const ChevronDown = () => {
   return (
-    <>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-      >
-        <path
-          d="M5 7.5L10 12.5L15 7.5"
-          stroke="#201F23"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    </>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M5 7.5L10 12.5L15 7.5"
+        stroke="#201F23"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 };
 
@@ -99,19 +98,19 @@ export const ShareIcon = ({ color }) => {
 
 export const ChevronUpRight = ({ color }) => {
   return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-      >
-        <path
-          d="M5 15L15 5M15 5H5.83333M15 5V14.1667"
-          stroke={color == 'primary'? "white" : "#36364A"}
-          strokeWidth="1.5"
-        />
-      </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M5 15L15 5M15 5H5.83333M15 5V14.1667"
+        stroke={color == 'primary' ? "white" : "#36364A"}
+        strokeWidth="1.5"
+      />
+    </svg>
   );
 };
 
